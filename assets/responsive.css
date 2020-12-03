@@ -1,0 +1,177 @@
+@media(min-width:1038px){
+  .navBtn{
+    display: none;
+  }
+}
+@media(max-width:1038px){
+  .container{
+    position: relative;
+    max-width: 504px;
+  }
+  header.fixed-header{
+    top: 0;
+  }
+  header .container{
+    padding-top: 10px;
+    position: relative;
+  }
+  header.fixed-header .container{
+    height: 47px;
+    box-sizing: border-box;
+  }
+  header.fixed-header .container a.logo img{
+    top: 13px;
+  }
+  header .container .navigation .topMenu{
+    display: none;
+  }
+  header .container .navigation .mainMenu{
+    position: absolute;
+    width: 300px;
+    right: 0;
+    z-index: 99;
+    top: 70px;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    pointer-events: none;
+    opacity: 0;
+  }
+  header.fixed-header .container .navigation .mainMenu{
+    top: 50px;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+  }
+  header .container .navigation .mainMenu.active{
+    pointer-events: all;
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+  }
+  header .container .navigation .mainMenu ul{
+    display: block;
+    border: 1px solid #dad7d7;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(92, 89, 74, 0.25);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(92, 89, 74, 0.25);
+    box-shadow: 0px 0px 10px 3px rgba(92, 89, 74, 0.25);
+    background: #fff;
+  }
+  header .container .navigation .mainMenu ul li{
+    display: block;
+    float: none;
+  }
+  .navBtn{
+    display: block;
+    margin-right: 10px;
+    margin-top: 3px;
+    pointer-events: all;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+  }
+  .navBtn.active{
+    margin-top: 5px;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+  }
+  .navBtn span{
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: #f5486f;
+    display: block;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+  }
+  .navBtn.active span:nth-child(2){
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+  }
+  .navBtn.active span:first-child{
+    transform: rotate(135deg);
+    margin: -10px 0;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+  }
+  .navBtn.active span:last-child{
+    transform: rotate(-135deg);
+    margin: 0;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+  }
+  .story{
+    width: 100%;
+  }
+  .story:nth-child(odd){
+    border-right: 1px solid #dad7d7;
+  }
+  .story:nth-last-child(2){
+    border-bottom: 0;
+  }
+  .story:nth-last-child(2)::after{
+    bottom: -8px;
+  }
+  .story:nth-of-type(odd)::before {
+    right: -9px;
+  }
+}
+@media(max-width:768px){
+  .story::before,
+  .story::after{
+    display: none;
+  }
+  .story:hover{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -ms-box-shadow: none;
+    transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+  }
+}
+@media(max-width:530px){
+  .container{
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  header .container{
+    padding: 10px 15px 0 15px;
+  }
+  header .container .navigation .mainMenu.active{
+    right: 15px;
+  }
+  header.fixed-header .container a.logo img{
+    padding: 0;
+  }
+  .navBtn{
+    right: 10px;
+  }
+  .story .textHolder {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .story .imgHolder{
+    width: 100%;
+    float: left;
+ }
+}
+@media(max-width:330px){
+  header .container .navigation .mainMenu{
+    width: 280px;
+  }
+}
